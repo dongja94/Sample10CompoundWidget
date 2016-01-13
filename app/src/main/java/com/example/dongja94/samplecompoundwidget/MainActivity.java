@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         myView = (ImageTextView)findViewById(R.id.myview);
-        ImageTextData data = new ImageTextData();
-        data.iconId = R.mipmap.ic_launcher;
-        data.title = "CompoundWidget Test";
-        myView.setImageTextData(data);
+//        ImageTextData data = new ImageTextData();
+//        data.iconId = R.mipmap.ic_launcher;
+//        data.title = "CompoundWidget Test";
+//        myView.setImageTextData(data);
 
         myView.setOnImageClickListener(new ImageTextView.OnImageClickListener() {
             @Override
