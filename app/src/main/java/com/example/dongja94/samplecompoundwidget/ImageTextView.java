@@ -4,14 +4,14 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
  * Created by dongja94 on 2016-01-13.
  */
-public class ImageTextView extends FrameLayout {
+public class ImageTextView extends LinearLayout {
     public ImageTextView(Context context) {
         super(context);
         init(null);
@@ -35,6 +35,7 @@ public class ImageTextView extends FrameLayout {
     }
 
     private void init(AttributeSet attrs) {
+        setOrientation(HORIZONTAL);
         inflate(getContext(), R.layout.view_image_text, this);
         iconView = (ImageView)findViewById(R.id.image_icon);
         titleView = (TextView)findViewById(R.id.text_title);
